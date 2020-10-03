@@ -13,57 +13,50 @@ namespace ChallengeThree_Repository
         //Dicationary collecton of key value pairs
         //key = badgeID
         //value = Badge
-        Dictionary<int, EmployeeBadge> badgeDictionary = new Dictionary<int, EmployeeBadge>();
-
-        List<EmployeeBadge> _listofEmployeeBadges = new List<EmployeeBadge>();
+        private Dictionary<int, EmployeeBadge> _badgeDictionary = new Dictionary<int, EmployeeBadge>();
 
         //Create
         public void AddBadgeToList(EmployeeBadge newEmployeeBadge)
         {
             //EmployeeBadge newEmployeeBadge = new EmployeeBadge(badgeID, doorNames, employeeName);
                                  //key                    //value
-            badgeDictionary.Add(newEmployeeBadge.BadgeID, newEmployeeBadge); 
+            _badgeDictionary.Add(newEmployeeBadge.BadgeID, newEmployeeBadge); 
         }
 
         //Read - get badge list w/ all numbers and door access 
-        public List<EmployeeBadge> GetBadgeList()
+        public Dictionary<int, EmployeeBadge> GetBadgeList()
         {
-            return _listofEmployeeBadges;
+            return _badgeDictionary;
         }
 
-
         //Update doors on existing badge
-        public bool UpdateDoorsOnBadge(int badgeID, EmployeeBadge newEmployeeBadge)
+        
+        public bool AddDoorToBadge(EmployeeBadge employeeBadge, string doorWeWant)
         {
-            //Find the content
-            EmployeeBadge oldBadge = GetBadgeByID(badgeID);
+            bool doorAdded;
 
-            //Update the content
-            if(oldBadge != null)
+            if(_badgeDictionary.Count < 0)
             {
-                oldBadge.DoorNames = newEmployeeBadge.DoorNames;
-                return true;
+                string door = doorWeWant;
+                employeeBadge.DoorNames.Add(door);
+                doorAdded = true;
             }
             else
             {
-                return false;
+                doorAdded = false;
             }
-
+            return doorAdded;
         }
 
         //Delete all doors from existing badge //verify if they are removed
         public bool RemoveDoorsFromBadge(EmployeeBadge employeeBadge, string doorWeWant)
         {
-            List<string> DoorNames = employeeBadge.DoorNames;
-
             bool doorRemoved;
-
-           // int initialCount = badgeDictionary.Count;
             
-            if(badgeDictionary.Count > 0)
+            if(_badgeDictionary.Count > 0)
             {
                 string door = doorWeWant;
-                DoorNames.Remove(door);
+                employeeBadge.DoorNames.Remove(door);
                 doorRemoved = true;
             }
                       
@@ -73,7 +66,6 @@ namespace ChallengeThree_Repository
             }
 
             return doorRemoved;
-
         }
 
         //Helper methods
@@ -81,7 +73,7 @@ namespace ChallengeThree_Repository
         {
             EmployeeBadge newEmployeeBadge = new EmployeeBadge();
         
-            foreach (var employeeBadge in badgeDictionary)
+            foreach (var employeeBadge in _badgeDictionary)
             {
                 if (employeeBadge.Key == badgeIDInput)
                 {
@@ -92,10 +84,8 @@ namespace ChallengeThree_Repository
                 {
                     Console.WriteLine("Sorry - no badge found.");
                 }
-               
             }
             return null;
-
         }
 
     }

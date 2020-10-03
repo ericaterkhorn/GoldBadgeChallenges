@@ -23,7 +23,6 @@ namespace ChallengeThree_ConsoleApp
             bool keepRunning = true; //4
             while (keepRunning)
             {
-
                 //Display options to user - 1
                 Console.WriteLine("Hello Security Admin, What would you like to do?");
                 Console.WriteLine("Please select a menu option:\n" +
@@ -86,7 +85,7 @@ namespace ChallengeThree_ConsoleApp
             Console.WriteLine("Any other doors (y/n)?");
             string inputAnswer = Console.ReadLine();
 
-            while(inputAnswer == "y")
+            while (inputAnswer == "y")
             {
                 Console.WriteLine("List a door that it needs access to:");
                 string inputDoorNames = Console.ReadLine();
@@ -96,10 +95,10 @@ namespace ChallengeThree_ConsoleApp
             }
 
             if (inputAnswer == "n")
-             {
-                    Console.WriteLine("Press any key to continue.");
-                    Console.ReadKey();
-                }
+            {
+                Console.WriteLine("Press any key to continue.");
+                Console.ReadKey();
+            }
             //13
             _badgeRepo.AddBadgeToList(newEmployeeBadge);
         }
@@ -114,7 +113,7 @@ namespace ChallengeThree_ConsoleApp
             EmployeeBadge badgeID = new EmployeeBadge();
             Console.WriteLine("Enter the badge ID to update:");
             string badgeIDAsString = Console.ReadLine();
-            badgeID.BadgeID = int.Parse(badgeIDAsString);
+            int badgeIDAsInt = int.Parse(badgeIDAsString);
 
             //display door access for badge number
             Console.WriteLine($"{badgeID.BadgeID} has access to {badgeID.DoorNames}");
@@ -129,7 +128,7 @@ namespace ChallengeThree_ConsoleApp
                     Console.WriteLine("Which door would you like to remove?");
                     string doorNames = Console.ReadLine();
                     //how to remove door from badge
-                    //_badgeRepo.RemoveDoorsFromBadge(); 
+                    _badgeRepo.RemoveDoorsFromBadge(badgeID, doorNames);
                     break;
 
                 case "2":
@@ -137,48 +136,45 @@ namespace ChallengeThree_ConsoleApp
                     Console.WriteLine("Which door would you like to add?");
                     string doorNames1 = Console.ReadLine();
                     //need way to add door to badge
-                    //_badgeRepo.UpdateDoorsOnBadge(); 
+                    _badgeRepo.AddDoorToBadge(badgeID, doorNames1);
+
+                    Console.WriteLine($"Door was removed. {badgeID.BadgeID} has access to {badgeID.DoorNames}.");
                     break;
+
             }
 
-            //ask what they want to do - remove or add a door 
-            Console.WriteLine("Which door would you like to remove?");
-            string inputAnswer = Console.ReadLine();
-
-            //Display door removed and what door still has access to
-
-           //Add to repo
         }
-
-        //View badges
-        public void ViewAllBadges()
-        {
-            Console.Clear();
-            
-            List<EmployeeBadge> listOfEmployeeBadges = _badgeRepo.GetBadgeList(); 
-            
-            foreach(EmployeeBadge item in listOfEmployeeBadges)
+            //View badges
+            public void ViewAllBadges()
             {
-                     //string joined = string.Join(",", item.DoorNames);
-                    //string.Join(", ", listOfEmployeeBadges);
-                    Console.WriteLine($"Badge ID: {item.BadgeID}\n" +
-                    $"DoorAccess: {item.DoorNames}");
+                Console.Clear();
+            
+                Dictionary<int, EmployeeBadge> listOfEmployeeBadges = _badgeRepo.GetBadgeList();
+
+                foreach (KeyValuePair<int, EmployeeBadge> item in listOfEmployeeBadges)
+                {
+                //get the value and then get the property of the value
+                    Console.WriteLine($"Badge ID: {item.Value.BadgeID}\n" +
+                    $"DoorAccess: ");
+                foreach(string doors in item.Value.DoorNames)
+                    {
+                    Console.WriteLine(doors);
+                    }
+                }
             }
-        }
 
-        //Seed content list
-        private void SeedContentList()
-        {
-            EmployeeBadge badge1 = new EmployeeBadge(12345, new List<string>() { "A1", "B1", "C1" }, "Erica");
-            EmployeeBadge badge2 = new EmployeeBadge(23456, new List<string>() { "B2", "C4", "D5" }, "Mike");
-            EmployeeBadge badge3 = new EmployeeBadge(34567, new List<string>() { "C4", "A1", "D5" }, "Reagan");
+            //Seed content list
+            private void SeedContentList()
+            {
+                EmployeeBadge badge1 = new EmployeeBadge(12345, new List<string>() { "A1", "B1", "C1" }, "Erica");
+                EmployeeBadge badge2 = new EmployeeBadge(23456, new List<string>() { "B2", "C4", "D5" }, "Mike");
+                EmployeeBadge badge3 = new EmployeeBadge(34567, new List<string>() { "C4", "A1", "D5" }, "Reagan");
 
-            _badgeRepo.AddBadgeToList(badge1);
-            _badgeRepo.AddBadgeToList(badge2);
-            _badgeRepo.AddBadgeToList(badge3);
-        }
+                _badgeRepo.AddBadgeToList(badge1);
+                _badgeRepo.AddBadgeToList(badge2);
+                _badgeRepo.AddBadgeToList(badge3);
+            }
+
 
     }
-
-
 }
