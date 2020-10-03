@@ -1,0 +1,10 @@
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\bin\Debug\ChallengeTwo_Console.exe.config
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\bin\Debug\ChallengeTwo_Console.exe
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\bin\Debug\ChallengeTwo_Console.pdb
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\obj\Debug\ChallengeTwo_Console.csprojAssemblyReference.cache
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\obj\Debug\ChallengeTwo_Console.csproj.CoreCompileInputs.cache
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\obj\Debug\ChallengeTwo_Console.exe
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\obj\Debug\ChallengeTwo_Console.pdb
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\bin\Debug\ChallengeTwo_Repository.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\bin\Debug\ChallengeTwo_Repository.pdb
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeTwo_Console\obj\Debug\ChallengeTwo_Console.csproj.CopyComplete

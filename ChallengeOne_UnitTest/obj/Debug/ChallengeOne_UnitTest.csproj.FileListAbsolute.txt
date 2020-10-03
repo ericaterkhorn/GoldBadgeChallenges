@@ -1,0 +1,16 @@
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\obj\Debug\ChallengeOne_UnitTest.csprojAssemblyReference.cache
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\obj\Debug\ChallengeOne_UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\ChallengeOne_UnitTest.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\ChallengeOne_UnitTest.pdb
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\ChallengeOne.Repository.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\ChallengeOne.Repository.pdb
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\obj\Debug\ChallengeOne_UnitTest.csproj.CopyComplete
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\obj\Debug\ChallengeOne_UnitTest.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeOne_UnitTest\obj\Debug\ChallengeOne_UnitTest.pdb

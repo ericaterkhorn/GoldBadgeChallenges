@@ -1,0 +1,6 @@
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeThree_Repository\bin\Debug\ChallengeThree_Repository.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeThree_Repository\bin\Debug\ChallengeThree_Repository.pdb
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeThree_Repository\obj\Debug\ChallengeThree_Repository.csprojAssemblyReference.cache
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeThree_Repository\obj\Debug\ChallengeThree_Repository.csproj.CoreCompileInputs.cache
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeThree_Repository\obj\Debug\ChallengeThree_Repository.dll
+C:\Users\erica\source\repos\GoldBadgeConsoleAppChallenges\ChallengeThree_Repository\obj\Debug\ChallengeThree_Repository.pdb
